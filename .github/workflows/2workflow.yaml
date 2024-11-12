@@ -19,4 +19,4 @@ jobs:
         run: npm install
 
       - name: Run Films Test
-        run: npm test tests/swapi.spec.js
+        run: npm test tests/2swapi.spec.js
