@@ -13,11 +13,37 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 16.
+          node-version: 16
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run Films Test
+      - name: Run Films Test - swapi.spec.js
         run: npm test swapi.spec.js
-        run: npx jest 
+
+      - name: Run Films Test - 2swapi.spec.js
+        run: npm test 2swapi.spec.js
+
+      - name: Run Films Test - 3swapi.spec.js
+        run: npm test 3swapi.spec.js
+
+      - name: Run Films Test - 4swapi.spec.js
+        run: npm test 4swapi.spec.js
+
+      - name: Run Films Test - 5swapi.spec.js
+        run: npm test 5swapi.spec.js
+
+      - name: Run Films Test - 6swapi.spec.js
+        run: npm test 6swapi.spec.js
+
+      - name: Run Films Test - 7swapi.spec.js
+        run: npm test 7swapi.spec.js
+
+      - name: Run Films Test - 8swapi.spec.js
+        run: npm test 8swapi.spec.js
+
+      - name: Run Films Test - 9swapi.spec.js
+        run: npm test 9swapi.spec.js
+
+      - name: Run All Tests with Jest
+        run: npx jest
